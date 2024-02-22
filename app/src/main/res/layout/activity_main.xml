@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/crema"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/portales"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeText"
+        android:textAlignment="center"
+        android:textColor="@color/verde"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcomeDescription"
+        android:textAlignment="center"
+        android:textColor="@color/verde"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="219dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="96dp"
+        android:background="@drawable/round_button"
+        android:text="@string/buttonStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView2"/>
+
+</LinearLayout>
